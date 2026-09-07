@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Grok BH knob questionnaires</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; font:16px/1.45 system-ui,sans-serif; background:#0b0d10; color:#e8eaed; padding:16px; padding-bottom:48px; }
+  h1 { font-size:1.25rem; margin:0 0 8px; }
+  h2 { font-size:1.05rem; margin:28px 0 8px; color:#9cdcfe; }
+  .meta { color:#9aa0a6; font-size:0.9rem; margin-bottom:16px; }
+  .meta a { color:#8ab4f8; }
+  .intro { white-space:pre-wrap; color:#c4c7cc; font-size:0.92rem; }
+  .prompt { border:1px solid #30343a; border-radius:12px; overflow:hidden; margin:12px 0 20px; background:#14181e; }
+  .bar { display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:#1c2128; font-size:0.8rem; color:#9aa0a6; }
+  button { background:#3c82f6; color:#fff; border:0; border-radius:8px; padding:8px 14px; font-weight:600; }
+  button.ok { background:#2e7d32; }
+  pre { margin:0; padding:12px; white-space:pre-wrap; word-break:break-word; font:13px/1.4 ui-monospace,monospace; }
+  .links a { display:block; margin:6px 0; color:#8ab4f8; }
+</style>
+</head>
+<body>
+<h1>Grok sidequests — BH knobs</h1>
+<p class="meta">Play tip <code>18bd548</code> · dial HOLD · LAN phone page<br/>
+Codebase: Origin <code>mrxmoex/home-arcade</code> @ tip · point Grok at online repo if it can read it.</p>
+<div class="links">
+  <a href="/tips/GROK-SIDEQUESTS-BH-KNOBS.txt">Raw prompts (.txt)</a>
+  <a href="/tips/TICKET-bh-knob-board.txt">Knob board ticket</a>
+  <a href="/tips/TICKET-LEVEL-PACK-CATALOG.txt">Level-pack catalog paper</a>
+  <a href="/tips/TICKET-ASSET-SCORE-FANTASY.txt">Asset-score fantasy paper</a>
+  <a href="/">← Hub</a>
+</div>
+<h2>Grok sidequests — BH knobs (2026-09-07)</h2><p class="intro">Paste into Grok app (Multi / Expert / Heavy). Play tip floor: `18bd548` (#66 ALL-IN SETUP live — LevelPack×3 · fantasy labels · named exports). Dial turns HOLD — questionnaire before dial SHAs.</p><h2>1) Heavy — dial questionnaire (moe fills with Grok)</h2><div class="prompt"><div class="bar"><span>prompt 1</span><button type="button" onclick="copy(this)">Copy</button></div><pre>You are co-piloting Home Arcade blackhole-absorb Survival knobs with moe.
+Context: stubs exist (assetScoreMap, LevelPack, pressure-fade named exports). Feel dials are NOT turned yet.
+Ask ONE question at a time. After each answer, restate the implied knob table (name → suggested default vs new value). Stop when the dial sheet is complete enough for a thin coding SHA.
+
+Cover in order:
+1) Phone density feel after P0a (too empty / ok / still crowded)
+2) Skillup cadence (still too fast on long runs? early vs late)
+3) Tiny threats (absorb/loot readable? tear chip fair?)
+4) Vacuum pull (food-only correct? missing magnet loot types?)
+5) Asset→score map: which classes should pay more mass vs xp vs skill weight
+6) Level packs: how many packs for v1 (2–4)? names? Idle as map lab yes/no
+7) Arena: keep as 2× systems lab or family play soon
+8) Wife 30-min hook: one mechanic that creates chase without grind
+
+Rules: no code. No inventing features outside knobs/packs/assets. German or English ok — match moe.
+Start with Q1 only.</pre></div><h2>2) Multi — parallel experts (spawn 3)</h2><div class="prompt"><div class="bar"><span>prompt 1</span><button type="button" onclick="copy(this)">Copy</button></div><pre>#multitask or Multi mode: spawn three experts in parallel. Each returns a short section. Main synthesizes a one-page dial sheet.
+
+Expert A — Feel/physics: phone density + cadence + tiny/tear. Propose numeric deltas only on EXISTING knobs (SURVIVOR_PHONE_*, EARLY_XP_*, TEAR/tiny ratios). No new systems.
+
+Expert B — Economy/assets: ASSET_SCORE_MAP weights per enemy class (neutron/matter/gas/void-boost) + rare drop feel. Map class → readable loot fantasy.
+
+Expert C — Level packs: 3 pack concepts {id, bg mood, enemyTableRef, spawnCurveId} using LevelPack shape. Idle = map lab; Arena = systems 2×.
+
+Synthesize: table Knob | Current | Proposed | Why | Risk. Flag anything that needs art before the dial matters.</pre></div><h2>3) Expert — clarification pass (honesty)</h2><div class="prompt"><div class="bar"><span>prompt 1</span><button type="button" onclick="copy(this)">Copy</button></div><pre>Audit this claim against Home Arcade BotOp laws:
+&quot;It&#x27;s all about how the assets are handled.&quot;
+
+Clarify:
+- What is already a KNOB (code) vs ASSET (art/SFX) vs COSTUME (looks different, same math)
+- Where assetScoreMap + LevelPack stubs help vs where they still need art
+- What must NOT be sold as shipped (PWA, achievements fiction, hole-vs-hole spawn, etc. from honesty audit)
+
+Output: 3 columns Knob | Asset | Costume with BH examples. Then a 5-bullet &quot;don&#x27;t lie on phone&quot; list.</pre></div><h2>4) Heavy — workflow diagram (mermaid)</h2><div class="prompt"><div class="bar"><span>prompt 1</span><button type="button" onclick="copy(this)">Copy</button></div><pre>Draw mermaid diagrams (flowchart + sequence) for BotOp BH dial pipeline:
+
+Actors: moe, RªⁿÞ¡ (Bot-Admin), Heph, Proto, App Builder, Cursor CA (Composer+prefer Multitask/Grok), Fedora Grok Build CLI (off Cursor pool), Ops Desk tip board.
+
+Flow: play poke → tip notepad amend → thin ticket → CA stub/dial SHA → App Builder PASS → moe Origin squash-merge (token) → CAPITOL LAN :8787 republish → tip flash.
+
+Also sequence: knob SETUP (done) → questionnaire dials → one dial SHA at a time → wife 30-min gate.
+
+Keep Law7 (no per-child hub CSS), unit≠accept, one ticket=one PR=one SHA.</pre></div><h2>5) Multi — Grok Build CLI job cards (paste to CLI later)</h2><div class="prompt"><div class="bar"><span>prompt 1</span><button type="button" onclick="copy(this)">Copy</button></div><pre>Produce 3 headless `grok -p` job cards (prompt text only) for Fedora ~/.grok/bin/grok:
+A) READ-ONLY verify assetScoreMap defaults === pre-stub absorb math
+B) Draft LEVEL-PACK-CATALOG.md (3 packs, no code)
+C) Draft ASSET-SCORE-FANTASY.md (class → fantasy → weight rationale)
+
+Each card: cwd, flags (--output-format plain --max-turns N --no-subagents), success criteria, non-goals.</pre></div><h2>6) Expert — 30-min wife hook (paper only)</h2><div class="prompt"><div class="bar"><span>prompt 1</span><button type="button" onclick="copy(this)">Copy</button></div><pre>Design ONE progression hook for ~30 min engrossment on phone Survival.
+Must use existing knobs/packs/classes — no multiplayer, no IAP, no new game.
+Deliver: player fantasy (2 sentences), knob lever list, fail states, accept checklist for G-wife.
+HOLD code until moe GO.</pre></div>
+<script>
+async function copy(btn){
+  const pre = btn.closest('.prompt').querySelector('pre');
+  try {
+    await navigator.clipboard.writeText(pre.innerText);
+    btn.textContent = 'Copied';
+    btn.classList.add('ok');
+    setTimeout(()=>{btn.textContent='Copy'; btn.classList.remove('ok');},1500);
+  } catch(e) {
+    btn.textContent = 'Select+copy';
+  }
+}
+</script>
+</body>
+</html>
