@@ -1,23 +1,33 @@
-# Home Arcade — Grok knob sidequests
+# home-arcade-grok
 
-Public paste pack for Grok (Multi / Expert / Heavy).  
-**Origin SoT:** `mrxmoex/home-arcade` (Cursor Origin). This GitHub repo is a **Grok-facing mirror of docs only**.
+Public **Grok test mint** for Home Arcade (blackhole-absorb knobs / feel).  
+**Code SoT:** Cursor Origin `mrxmoex/home-arcade`. This repo is paper + prompts + session banks for Grok app / Heavy / Multi.
 
-**Play tip (2026-09-07):** `18bd548` — BH-KNOB-ALL-IN-SETUP (#66) live. **Dial turns HOLD** until moe fills the questionnaire.
+More tests will land here. Keep structure stable.
 
-## Start here
+## Layout
 
-1. [`docs/GROK-SIDEQUESTS-BH-KNOBS-20260907.md`](docs/GROK-SIDEQUESTS-BH-KNOBS-20260907.md) — all prompts
-2. [`docs/TICKET-bh-knob-board-20260907.md`](docs/TICKET-bh-knob-board-20260907.md) — knob inventory
-3. [`docs/TICKET-LEVEL-PACK-CATALOG-20260907.md`](docs/TICKET-LEVEL-PACK-CATALOG-20260907.md)
-4. [`docs/TICKET-ASSET-SCORE-FANTASY-20260907.md`](docs/TICKET-ASSET-SCORE-FANTASY-20260907.md)
+| Path | What |
+|------|------|
+| `prompts/` | Pasteable Grok prompts (versioned). Prefer latest `*-vN.md`. |
+| `sessions/YYYY-MM-DD-<slug>/` | One folder per completed Grok run. Always include `SESSION.md`. |
+| `reference/tickets/` | Knob board / pack / fantasy papers Grok may read. |
+| `sha-slices/` | Thin coding slices extracted from a session (Bot-Admin / CA input). |
 
-Raw text: [`docs/GROK-SIDEQUESTS-BH-KNOBS.txt`](docs/GROK-SIDEQUESTS-BH-KNOBS.txt)
+## How a test lands
+
+1. Pick or write a prompt under `prompts/`.
+2. Run in Grok (share link optional).
+3. Bank the outcome as `sessions/<date>-<slug>/SESSION.md` (answers + trails + tables).
+4. If dials are ready: add `sha-slices/SHA-N-*.md` with exact knob deltas for one Origin PR.
+5. Bot-Admin fires Cursor CA on Origin — this mint does **not** merge game code.
+
+## Current tip (feel)
+
+- Play tip floor (SETUP): Origin `18bd548` (ALL-IN knobs).
+- Dial SHA-1: see `sha-slices/SHA-1-density-cadence.md` (from session 2026-09-07).
 
 ## Point Grok at
 
-```
-https://github.com/mrxmoex/home-arcade-grok
-```
-
-Especially: `docs/GROK-SIDEQUESTS-BH-KNOBS-20260907.md` section **1) Heavy — dial questionnaire**.
+Repo root or a single file, e.g.  
+`https://github.com/mrxmoex/home-arcade-grok/blob/main/prompts/dial-questionnaire-v2.md`
