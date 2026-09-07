@@ -10,6 +10,7 @@ More tests will land here. Keep structure stable.
 | Path | What |
 |------|------|
 | `prompts/` | Pasteable Grok prompts (versioned). Prefer latest `*-vN.md`. |
+| `templates/HAVE-AND-EXPAND.md` | **Start here** — seeded live skills/classes; expand / fantasize |
 | `sessions/YYYY-MM-DD-<slug>/` | One folder per completed Grok run. Always include `SESSION.md`. |
 | `reference/tickets/` | Knob board / pack / fantasy papers Grok may read. |
 | `sha-slices/` | Thin coding slices extracted from a session (Bot-Admin / CA input). |

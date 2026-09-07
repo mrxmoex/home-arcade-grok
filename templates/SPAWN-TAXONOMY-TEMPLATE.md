@@ -1,15 +1,5 @@
-# Spawn taxonomy template (distinguish crowded field)
+# Spawn taxonomy
 
-**Goal:** spawn lots OK — each body readable.  
-**Axes:** motion · role · scale band · fantasy.
+**Superseded for filling:** use [`HAVE-AND-EXPAND.md`](HAVE-AND-EXPAND.md) §2 — seeded from live ThreatKind + ENEMY_CLASSES + rare drops.
 
-| id | Display | Motion (stationary / moving) | Role (enemy / loot / phenomenon / food-rubble) | Scale band (dust→quasar) | Silhouette note | Notes |
-|----|---------|------------------------------|-----------------------------------------------|--------------------------|-----------------|-------|
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-
-**Hard rules (moe):**
-- Other black holes = **occasional**, never the common body.
-- Growth-progress can change which rows dominate.
-- Blur = FAIL; volume alone = OK.
+Blank rows only for **new** kinds (other-BH occasional, phenomenon, planted loot).
